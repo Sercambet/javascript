@@ -27,6 +27,11 @@ let area1=(prompt('digita el largo en metros de tu lote'));
 let area2=(prompt('digita el ancho en metros de tu lote'));
 alert('el area de tu lote es ' + (area1*area2) + ' m2 ');
 
+// calcuadora de perimetro
+
+let lado1=(prompt('digita el tamaño en cms de lado de tu cuadrado'));
+alert('tu perimetro del cuadrado es ' + (lado1*4) + ' cms ');
+
 //calculadora de IMC
 
 
