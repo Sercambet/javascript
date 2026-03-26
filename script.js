@@ -32,6 +32,14 @@ alert('el area de tu lote es ' + (area1*area2) + ' m2 ');
 let lado1=(prompt('digita el tamaño en cms de lado de tu cuadrado'));
 alert('tu perimetro del cuadrado es ' + (lado1*4) + ' cms ');
 
+// convertidor de minutos a segundos
+
+let minutos=(prompt('digita cantidad de minutos'))
+alert(minutos + ' minutos ' + ' equivalen a ' + minutos*60 + ' segundos ' )
+
+let segundos=(prompt('digita la cantidad de segundos'))
+alert(segundos + 'segundos' + 'equivalen a ' + segundos/60 + ' minutos ' )
+
 //calculadora de IMC
 
 
