@@ -9,9 +9,15 @@ let COP=(prompt('digita tu valor en PESOS (COP)'));
 alert(COP + ' COP equivalen a $'  + (COP/3693).toFixed(2) + 'USD');
 
 let USD=(prompt('digita tu valor en dolares'));
-alert(USD + 'USD equivalen a $' + (USD*3963).toLocaleString('es-CO') + ' COP ');
+alert(USD + ' USD equivalen a $ ' + (USD*3963).toLocaleString('es-CO') + ' COP ');
 
-// 
+// convertidor de grados celcius a farenheit
+
+let celcius=(prompt(' digita tu temperatura celcius '))
+let farenheit=(celcius*9/5) + 32;
+alert(' tu temperatura en farenheit es ' + (farenheit) + ' F° ')
+
+//
 
 //calculadora de IMC
 
