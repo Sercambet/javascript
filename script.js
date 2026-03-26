@@ -21,7 +21,11 @@ let farenheit1=(prompt('digita tu temperatura farenheit'));
 let celcius1=(farenheit1-32)*5/9;
 alert(' tu temperatura en celcius es ' + (celcius1) + ' C° ');
 
-//
+// calculadora de area de un cuadrado
+
+let area1=(prompt('digita el largo en metros de tu lote'));
+let area2=(prompt('digita el ancho en metros de tu lote'));
+alert('el area de tu lote es ' + (area1*area2) + ' m2 ');
 
 //calculadora de IMC
 
