@@ -35,18 +35,30 @@ alert('tu perimetro del cuadrado es ' + (lado1*4) + ' cms ');
 // convertidor de minutos a segundos
 
 let minutos=(prompt('digita cantidad de minutos'))
-alert(minutos + ' minutos ' + ' equivalen a ' + minutos*60 + ' segundos ' )
+alert(minutos + ' minutos' + ' equivalen a' + minutos*60 + ' segundos ' )
 
 let segundos=(prompt('digita la cantidad de segundos'))
-alert(segundos + 'segundos' + 'equivalen a ' + segundos/60 + ' minutos ' )
+alert(segundos + ' segundos' + ' equivalen a' + segundos/60 + ' minutos ' )
+
+//area de un triangulo
+
+let base=(prompt(' digita la base del triangulo'))
+let altura=(prompt(' digita la altura del triangulo'))
+alert(' el area de tu triangulo es'+ (base*altura))
+
 
 //calculadora de IMC
+
+let kg=(prompt('digita tu peso corporal en Kg'));
+let estatura=(prompt('digita tu estatura en centimetros'));
+alert('tu indice de masa corporal es='+ kg/estatura*estatura)
+alert('Eso indica que ESTÁS GORDITO');
 
 
 // convertidor de milimetros a centimetros
 
 let medida=(prompt ('digita tu medida en milímetros') );
-console.log('ok tu medida es' + medida)
+console.log('ok tu medida es' + medida);
 alert ('confirmo que tu medida en milimetros es: ' + medida +' milímetros')
 alert ('entonces tu medida en centimetros es: ' + medida/10 +' centímetros')
 
