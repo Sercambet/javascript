@@ -13,9 +13,13 @@ alert(USD + ' USD equivalen a $ ' + (USD*3963).toLocaleString('es-CO') + ' COP '
 
 // convertidor de grados celcius a farenheit
 
-let celcius=(prompt(' digita tu temperatura celcius '))
+let celcius=(prompt(' digita tu temperatura celcius '));
 let farenheit=(celcius*9/5) + 32;
-alert(' tu temperatura en farenheit es ' + (farenheit) + ' F° ')
+alert(' tu temperatura en farenheit es ' + (farenheit) + ' F° ');
+
+let farenheit1=(prompt('digita tu temperatura farenheit'));
+let celcius1=(farenheit1-32)*5/9;
+alert(' tu temperatura en celcius es ' + (celcius1) + ' C° ');
 
 //
 
