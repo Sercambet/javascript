@@ -49,9 +49,10 @@ alert(' el area de tu triangulo es'+ (base*altura))
 
 //calculadora de IMC
 
-let kg=(prompt('digita tu peso corporal en Kg'));
-let estatura=(prompt('digita tu estatura en centimetros'));
-alert('tu indice de masa corporal es='+ kg/estatura*estatura)
+let kg=Number(prompt('digita tu peso corporal en Kg'));
+let estatura=Number(prompt('digita tu estatura en centimetros'));
+let imc = kg/(estatura*estatura);
+alert('tu indice de masa corporal es='+ imc.toFixed);
 alert('Eso indica que ESTÁS GORDITO');
 
 
@@ -61,4 +62,5 @@ let medida=(prompt ('digita tu medida en milímetros') );
 console.log('ok tu medida es' + medida);
 alert ('confirmo que tu medida en milimetros es: ' + medida +' milímetros')
 alert ('entonces tu medida en centimetros es: ' + medida/10 +' centímetros')
+
 
