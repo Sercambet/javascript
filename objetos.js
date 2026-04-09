@@ -9,4 +9,7 @@ const items = [
 
 for (let i = 0; i < items.length; i++) {
     console.log("El item " + items[i].nombre + " pertenece a la sección de " + items[i].categoria +" y tiene un precio de " + items[i].precio + " COP ");
-}
+    if (items[i].precio > 5000) {
+        console.log("El item " + items[i].nombre + " no se puede fiar por su precio ");
+    }
+}   
