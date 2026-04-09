@@ -7,8 +7,6 @@ const items = [
 ];
 
 
-
-// Imprimir el nombre, categoría y precio de cada item:  
 for (let i = 0; i < items.length; i++) {
     console.log("El item " + items[i].nombre + " pertenece a la sección de " + items[i].categoria +" y tiene un precio de " + items[i].precio + " COP ");
 }
