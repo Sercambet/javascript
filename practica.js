@@ -47,7 +47,7 @@ for (let i = 1; i < marcas.length; i++) {
     }
 }
 
-//aqui imprimo todo
+//aqui imprimo todo profe
 console.log("La marca con la palabra mas corta es: " + marcamascorta);
 console.log("La marca con la palabra mas larga es: " + marcamaslarga);
 
