@@ -14,3 +14,5 @@ if (mes >= 1 && mes <= 2) {
 } else {
     console.log("Número de mes inválido. Por favor, ingrese un número entre 1 y 12.");
 }
+
+
