@@ -13,12 +13,11 @@ html, body{
 
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
-    flex-wrap: wrap;
-    margin: 100px;
+    padding: 30px 20px;
 }
 
 h1{
@@ -26,16 +25,38 @@ h1{
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 16px;
 }
+
+.butns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.butns button{
+    padding: 10px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 
 section{
     display: flex;
     gap: 20px;
-    align-items: center;
-    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 20px;
-
+    width: 100%;
 }
 
 .card{

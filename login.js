@@ -21,6 +21,28 @@ const paises = [
     { nombre: "Canadá", imagen: "https://flagcdn.com/w320/ca.png" },
 ];
 
+const paisesConIdioma = [
+    { nombre: "Argentina", imagen: "https://flagcdn.com/w320/ar.png", idioma: "español" },
+    { nombre: "Brasil", imagen: "https://flagcdn.com/w320/br.png", idioma: "portugués" },
+    { nombre: "México", imagen: "https://flagcdn.com/w320/mx.png", idioma: "español" },
+    { nombre: "Colombia", imagen: "https://flagcdn.com/w320/co.png", idioma: "español" },
+    { nombre: "Chile", imagen: "https://flagcdn.com/w320/cl.png", idioma: "español" },
+    { nombre: "Perú", imagen: "https://flagcdn.com/w320/pe.png", idioma: "español" },
+    { nombre: "Venezuela", imagen: "https://flagcdn.com/w320/ve.png", idioma: "español" },
+    { nombre: "Ecuador", imagen: "https://flagcdn.com/w320/ec.png", idioma: "español" },
+    { nombre: "Bolivia", imagen: "https://flagcdn.com/w320/bo.png", idioma: "español" },
+    { nombre: "Uruguay", imagen: "https://flagcdn.com/w320/uy.png", idioma: "español" },
+    { nombre: "Paraguay", imagen: "https://flagcdn.com/w320/py.png", idioma: "español" },
+    { nombre: "España", imagen: "https://flagcdn.com/w320/es.png", idioma: "español" },
+    { nombre: "Francia", imagen: "https://flagcdn.com/w320/fr.png", idioma: "francés" },
+    { nombre: "Alemania", imagen: "https://flagcdn.com/w320/de.png", idioma: "alemán" },
+    { nombre: "Italia", imagen: "https://flagcdn.com/w320/it.png", idioma: "italiano" },
+    { nombre: "Portugal", imagen: "https://flagcdn.com/w320/pt.png", idioma: "portugués" },
+    { nombre: "Japón", imagen: "https://flagcdn.com/w320/jp.png", idioma: "japonés" },
+    { nombre: "China", imagen: "https://flagcdn.com/w320/cn.png", idioma: "chino" },
+    { nombre: "Estados Unidos", imagen: "https://flagcdn.com/w320/us.png", idioma: "inglés" },
+    { nombre: "Canadá", imagen: "https://flagcdn.com/w320/ca.png", idioma: "inglés" },
+];
 
 let title = document.querySelector('h1');
 title.textContent = 'Paises del mundo';
@@ -41,6 +63,67 @@ paises.forEach(pais => {
 });
 
 
+let btnEspañol = document.getElementById("BtnEspañol");
+let btnIngles = document.getElementById("BtnIngles");
+let btnOtroIdioma = document.getElementById("BtnOtroIdioma");
+
+btnEspañol.addEventListener("click", () => {
+    // Lógica para mostrar paises que hablan español
+    container.innerHTML = '';
+    paisesConIdioma.forEach(pais => {
+        if (pais.idioma === "español") {
+            let card = document.createElement('div');
+            card.classList.add('card');
+            let img = document.createElement('img');
+            img.src = pais.imagen;
+            img.alt = pais.nombre;
+            let name = document.createElement('h2');
+            name.textContent = pais.nombre;
+            card.appendChild(img);
+            card.appendChild(name);
+            container.appendChild(card);
+        }
+    });
+
+});
+
+btnIngles.addEventListener("click", () => {
+    // Lógica para mostrar paises que hablan ingles
+    container.innerHTML = '';
+    paisesConIdioma.forEach(pais => {
+        if (pais.idioma === "inglés") {
+            let card = document.createElement('div');
+            card.classList.add('card');
+            let img = document.createElement('img');
+            img.src = pais.imagen;
+            img.alt = pais.nombre;
+            let name = document.createElement('h2');
+            name.textContent = pais.nombre;
+            card.appendChild(img);
+            card.appendChild(name);
+            container.appendChild(card);
+        }
+    });
+});
+
+btnOtroIdioma.addEventListener("click", () => {
+    // Lógica para mostrar paises que hablan otro idioma
+    container.innerHTML = '';
+    paisesConIdioma.forEach(pais => {
+        if (pais.idioma !== "español" && pais.idioma !== "inglés") {
+            let card = document.createElement('div');
+            card.classList.add('card');
+            let img = document.createElement('img');
+            img.src = pais.imagen;
+            img.alt = pais.nombre;
+            let name = document.createElement('h2');
+            name.textContent = pais.nombre;
+            card.appendChild(img);
+            card.appendChild(name);
+            container.appendChild(card);    
+        }
+    });
+});
 
 
 
