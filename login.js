@@ -21,32 +21,6 @@ const paises = [
     { nombre: "Canadá", imagen: "https://flagcdn.com/w320/ca.png" },
 ];
 
-// //   <div class="card">
-//         <div class="img">
-//             <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/FEC67PB62VC3VF6LF5KNEGB2EE.jpg" alt="cartagena">
-//             <div>
-//        <p>Paises</p>
-
-//    </div> 
-
-for (let i = 0; i < paises.length; i++) {
-    let nombre = paises[i].nombre;
-    let imagen = paises[i].imagen;
-    let container = document.querySelector('section');
-    container.innerHTML += `
-      <div class="card">/         <div class="img">
-           <img src="${imagen}" alt="cartagena">
-             <div>
-     <p>${paises[i].nombre}</p>
-
-   </div> 
-    `;
-
-    console.log("Los paises listados son: " + paises[i].nombre);
-}
-
-
-
 
 let title = document.querySelector('h1');
 title.textContent = 'Paises del mundo';
