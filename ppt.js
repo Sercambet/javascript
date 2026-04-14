@@ -1,19 +1,32 @@
+const opciones = ["piedra", "papel", "tijera"];
 
+function jugar() {
+  const jugador = prompt("Elige: piedra, papel o tijera").toLowerCase().trim();
 
-let numeros = [1,2,3,4,5,6,7,8,9,10];
-let pares = [];
-let impares = [];    
+  if (!opciones.includes(jugador)) {
+    alert("Opción inválida. Intenta de nuevo.");
+    return jugar();
+  }
 
-for (let i =1; i <= 10; i++){
-    if (i % 2 === 0) {
-        console.log(i + "es par");
-        pares.push(i);
-    } else {
-        console.log(i + "es impar");
-        impares.push(i);
-    }
+  const computadora = opciones[Math.floor(Math.random() * 3)];
+
+  let resultado;
+  if (jugador === computadora) {
+    resultado = "Empate";
+  } else if (
+    (jugador === "piedra" && computadora === "tijera") ||
+    (jugador === "papel" && computadora === "piedra") ||
+    (jugador === "tijera" && computadora === "papel")
+  ) {
+    resultado = "Ganaste";
+  } else {
+    resultado = "Perdiste";
+  }
+
+  alert(`Tu: ${jugador}\nComputadora: ${computadora}\n\n${resultado}!`);
+
+  const repetir = confirm("¿Jugar de nuevo?");
+  if (repetir) jugar();
 }
 
-
-console.log("Los numeros pares son: " + pares);
-console.log("Los numeros impares son: " + impares);
+jugar();
